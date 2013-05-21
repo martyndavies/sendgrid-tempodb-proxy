@@ -52,5 +52,5 @@ http.createServer(function (req, res){
 		res.writeHead(405, 'Method not supported', {'Content-Type': 'text/html'});
 		res.end('<html><head><title>405 - Method not supported</title></head><body><h1>Method not supported.</h1></body></html>');
 	}
-}).listen(8080, function(){ console.log('Listening for SendGrid activity on port 8080')});
+}).listen(process.env.PORT || 8080, function(){ console.log('Listening for SendGrid activity on port 8080')});
 
