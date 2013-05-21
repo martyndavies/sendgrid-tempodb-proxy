@@ -3,12 +3,9 @@
   "version": "0.0.1",
   "description": "Proxy for SendGrid Event API through to TempDB timeseries database",
   "main": "./proxy.js",
-  "bin": {"cmdgrid": "./lib/cmdgrid.js"},
-  "directories": {"bin": "./bin"},
   "repository": { "type": "git", "url": "git://github.com/martyndavies/sendgrid-tempodb-proxy.git" },
   "keywords": ["tempodb", "sendgrid", "email", "realtime", "timeseries", "analytics"],
   "dependencies": {
-    "request": "*",
     "tempodb": "*"
   },
   "licenses": [{
